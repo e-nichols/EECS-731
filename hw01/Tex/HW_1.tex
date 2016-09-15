@@ -1,0 +1,42 @@
+\documentclass[11pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+\usepackage{lipsum} %This package just generates Lorem Ipsum filler text. 
+\usepackage{fullpage} % changes the margin
+
+\begin{document}
+\noindent
+\large\textbf{Assignment 1} \hfill \textbf{Evan Nichols} \\
+\normalsize EECS 731 \hfill 8/30/16 \\ 
+Prof. Beckage \hfill \\
+
+\section*{Three Potential Datasets}
+
+\begin{enumerate}
+	\item College Scorecard Data
+		\begin{enumerate}
+			\item 1996-2015
+			\item Educational psychology, economics
+			\item Loan performance, student debt, Labor Market Outcomes, Higher education
+			\item Students who take out loans are taking longer to repay their debt.
+			\item Compare the length of payment plans across students over the 1996 - 2015 period. Use a linear or quadratic regression model to try and predict every 4th year of data.
+		\end{enumerate}
+	\item Stanford Wordbank
+		\begin{enumerate}
+			\item Contains data from 59,802 children and 66,635 CDI administrations, across 17 languages and 31 instruments.
+			\item Vocabulary development, Language and Cognition
+			\item Language Trajectories, Vocabulary Norms, Semantic networks, growth curves
+			\item Words that are a single syllable in one language will see faster growth/adoption curves than their multi-syllable counterparts (e.g. "dog" in English compared to "perro" in Spanish and "kopek" in Turkish).
+			\item This problem falls into a discrete, unsupervised category because we are attempting to find structure based on number of syllables. Create linear regression models for multiple words' adoption curves and compare across different languages (more specifically, comparing words that have different syllable counts across different languages). 
+		\end{enumerate}
+	\item Hoop Math - College Basketball Play-by-play Statistics
+		\begin{enumerate}
+			\item 2011 - 2016
+			\item Sports, Performance Analysis
+			\item Shooting, Assists, Offensive/Defensive Transition Splits, Putbacks
+			\item Team chemistry can be quantified as a weighted linear combination of all regular season statistics.
+			\item Create a model for "team chemistry" based on the relative average age of the starters, team assist rates and average PPG. Use this chemistry model on previous 3 years of regular season play data.
+		\end{enumerate}
+\end{enumerate}
+
+
+\end{document}
